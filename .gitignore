@@ -1,2 +1,3 @@
 go/
 *.pptx
+py/__pycache__/
