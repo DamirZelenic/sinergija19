@@ -1,0 +1,3 @@
+/providers/Microsoft.Management/managementGroups/cool | 2019-08-14T13:07:39.797845Z | dzelenic@windowslive.com | Create or Update | Succeeded
+/providers/Microsoft.Management/managementGroups/cool | 2019-08-14T13:07:16.5278905Z | dzelenic@windowslive.com | Create or Update | Accepted
+/providers/Microsoft.Management/managementGroups/cool | 2019-08-14T13:07:14.8228297Z | dzelenic@windowslive.com | Create or Update | Started
