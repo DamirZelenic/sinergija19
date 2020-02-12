@@ -89,11 +89,14 @@ if __name__ == '__main__':
     #print(graph_token)
     owner_id = azHelper.get_id_from_upn(graph_token, tenant, owner_mail)
     print(f"Object ID za {owner_mail}: {owner_id}")
-
+    user_props = azHelper.get_user_props(graph_token, tenant, owner_mail, "id,displayName,givenName")
+    print("props:", user_props["displayName"])
+    '''
     role_name = input("Role Name:")
     role_definition_id, name = get_roleDefinitionId(azure_token, role_name, sub_id)
     print(f"Role definition za {role_name}: {role_definition_id}")
 
     response = grant_access(azure_token, sub_id, name, role_definition_id, owner_id)
     print(response)
+    '''
 #endregion

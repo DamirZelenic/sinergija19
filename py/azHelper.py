@@ -95,4 +95,10 @@ def authenticate_device_code(tenant):
     token = context.acquire_token_with_device_code(resource_uri, code, client_id)
     return token["accessToken"]
 
-
+'''
+Get all user props using Graph
+'''
+def get_user_props(token, tenant, upn, props):
+    base_url = "https://graph.microsoft.com/v1.0/users/"
+    url_str = f"{base_url}{upn}?$select={props}"
+    return exec_REST(token, "get", url_str)
