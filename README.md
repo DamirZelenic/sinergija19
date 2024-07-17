@@ -1,2 +1,2 @@
 # sinergija19
-Demo code from Sinergija 19
+Demo code from Sinergija 19.
